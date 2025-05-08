@@ -1,27 +1,21 @@
-'use client';
-
 import DashboardLayout from '@/components/dashboard/dashboard-layout';
-import DashboardHeader from '@/components/dashboard/dashboard-header';
-import OverviewStats from '@/components/dashboard/overview-stats';
-import RecentProjects from '@/components/dashboard/recent-projects';
-import TasksOverview from '@/components/dashboard/tasks-overview';
-import ActivityFeed from '@/components/dashboard/activity-feed';
+import AnalyticsHeader from '@/components/analytics/analytics-header';
+import TaskCompletionChart from '@/components/analytics/task-completion-chart';
+import TeamPerformanceChart from '@/components/analytics/team-performance-chart';
+import ProjectProgressStats from '@/components/analytics/project-progress-stats';
+import PriorityDistributionChart from '@/components/analytics/priority-distribution-chart';
 
-export default function DashboardPage() {
+export default function AnalyticsPage() {
   return (
     <DashboardLayout>
       <div className="flex flex-col gap-6">
-        <DashboardHeader />
-        <OverviewStats />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:col-span-2">
-            <RecentProjects />
-          </div>
-          <div>
-            <TasksOverview />
-          </div>
+        <AnalyticsHeader />
+        <ProjectProgressStats />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <TaskCompletionChart />
+          <TeamPerformanceChart />
         </div>
-        <ActivityFeed />
+        <PriorityDistributionChart />
       </div>
     </DashboardLayout>
   );
