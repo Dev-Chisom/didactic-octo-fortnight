@@ -20,8 +20,9 @@
 *.pem
 
 # environment configuration
-env-config.json
 .env
+.env.local
+.env.*.local
 
 # debug
 npm-debug.log*
