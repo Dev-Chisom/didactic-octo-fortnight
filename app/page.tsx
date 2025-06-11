@@ -13,9 +13,9 @@ export default function Home() {
             <h1 className="text-xl font-bold">ProjectFlow</h1>
           </div>
           <div className="hidden md:flex items-center gap-6">
-            <Link href="/features" className="text-sm font-medium hover:text-primary">Features</Link>
-            <Link href="/pricing" className="text-sm font-medium hover:text-primary">Pricing</Link>
-            <Link href="/about" className="text-sm font-medium hover:text-primary">About</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary">Features</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary">Pricing</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary">About</Link>
           </div>
           <div className="flex items-center gap-4">
             <Link 
@@ -113,10 +113,10 @@ export default function Home() {
               <span className="font-medium">ProjectFlow</span>
             </div>
             <div className="flex gap-6 mb-4 md:mb-0">
-              <Link href="/features" className="text-sm text-muted-foreground hover:text-foreground">Features</Link>
-              <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground">Pricing</Link>
-              <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground">About</Link>
-              <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">Contact</Link>
+              <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Features</Link>
+              <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Pricing</Link>
+              <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">About</Link>
+              <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Contact</Link>
             </div>
             <div className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} ProjectFlow. All rights reserved.
